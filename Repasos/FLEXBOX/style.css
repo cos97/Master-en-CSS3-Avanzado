@@ -3,19 +3,51 @@ body{
 }
 
 .flex-container{
-    display: flex;
     border:1px solid black;
-    
+    background: #ccc;
+    padding: 20px;
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;
+    'El flex-flow hace la funcion de ambas' */
+    flex-flow: row wrap;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    align-content: center;
+    /* Muchos tipos */
+    justify-content: center;
+    align-items: center;
 }
 
 .caja{
     border: 1px solid hsl(0, 3%, 29%);
+    background-color: white;
     color: black;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
+    width: 200px;
+    line-height: 200px;
     text-align: center;
     margin: 5px;
+}
+
+.c1{
+    background: lightblue;
+    order: 2;
+    flex-grow: 1;
+    /* Mas amigable usar 'flex-basic' que el 'width' */
+    flex-basis: 50%;
+}
+
+.c2{
+    background: lightcoral;
+    order: 3;
+    flex-grow: 1;
+}
+
+.c3{
+    background: lightgreen;
+    order: 1;
+    flex-grow: 1;
 }
