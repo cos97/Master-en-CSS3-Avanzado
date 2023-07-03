@@ -1,0 +1,23 @@
+:root{
+    --color-principal: lightcoral;
+    --fuente: Verdana;
+    --fuente-size: 25px;
+}
+
+h1{
+    color: var(--color-principal);
+    font-family: var(--fuente);
+    font-size: var(--fuente-size);
+}
+
+p{
+    font-family: var(--fuente);
+}
+
+a{
+    color: var(--color-principal);
+}
+
+h3{
+    font-size: var(--fuente-size);
+}
