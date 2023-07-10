@@ -303,3 +303,92 @@ body{
 .title__color{
     color: var(--color-secondary);
 }
+
+/* Informacion Personal */
+.about__personal-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.personal-info__bio{
+    flex-basis: 56%;
+}
+
+.personal-info__description{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+
+}
+.personal-info__data{
+    flex-basis: 44%;
+    padding: 0 1.5rem;
+}
+
+.personal-info__option{
+    margin-bottom: 1rem;
+}
+
+.personal-info__title{
+    margin-right: 0.5rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+/* Servicios */
+.about__services{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.services__header{
+    display: inline-block;
+    padding-right: 1.2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.services__title{
+    font-size: 2.1rem;
+}
+
+.services__title::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
+
+.services__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+.services__service{
+    flex-basis: calc(50% - 3rem);
+    margin-right: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.service__real-icon{
+    color: var(--color-secondary);
+    font-size: 3.8rem;
+}
+
+.service__title{
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.service__description{
+    font-size: 1.5rem;
+    text-align: justify;
+}
