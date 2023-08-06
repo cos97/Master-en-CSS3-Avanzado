@@ -1,0 +1,36 @@
+img{
+    filter: blur(10px);
+    transition: all 200ms ease-in-out;
+}
+
+img:hover{
+    filter: blur(0);
+}
+
+.caja{
+    filter: sepia(90%);
+
+    border: 1px solid blue;
+    background-color: aqua;
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    width: 250px;
+    height: 250px;
+}
+
+/* 
+grayscale
+sepia
+saturate
+blur: px
+opacity
+contrast
+brightness
+invert
+drop-shadow (para imagenes con transparencia)
+hue-rotate (invierte colores)
++
+*/
